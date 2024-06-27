@@ -1,0 +1,26 @@
+// 指定proto版本
+syntax = "proto3";
+// 指定默认包名
+package stream_proto;
+// 指定golang包名
+option go_package = "/stream_proto";
+
+//定义个流服务，叫什么名字无所谓
+service ServiceStream {
+  //下载文件，关键字stream
+  rpc DownloadFile(Request)returns(stream FileResponse){}
+}
+//请求参数
+message Request{
+  string name = 1;
+}
+
+//文件回调参数
+message FileResponse{
+  //字节数据类型，即文件内容、数据
+  bytes content =1;
+}
+
+//protoc --go_out=. --go-grpc_out=. ./stream.proto
+
+
