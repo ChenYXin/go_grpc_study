@@ -1,0 +1,18 @@
+// 指定proto版本
+syntax = "proto3";
+// 指定默认包名
+package wake_grpc;
+// 指定golang包名
+option go_package = "/wake_proto";
+//引入公共proto文件
+import "common.proto";
+
+//语音唤醒服务
+service VoiceWakeService {
+  //狗叫
+  rpc DogBark(Request)returns(Response){}
+}
+
+//protoc --go_out=. --go-grpc_out=. ./voice_wake.proto
+
+

@@ -1,0 +1,17 @@
+// 指定proto版本
+syntax = "proto3";
+// 指定默认包名
+package wake_grpc;
+// 指定golang包名
+option go_package = "/wake_proto";
+
+//请求参数
+message Request{
+  string name = 1;
+}
+//响应参数
+message Response{
+  string sound = 1;
+}
+
+//protoc --go_out=. --go-grpc_out=. ./common.proto
