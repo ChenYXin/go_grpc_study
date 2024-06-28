@@ -21,6 +21,9 @@
 ## 第七章 [客户端流式传输](http://blog.csdn.net/donkor_/article/details/140044581)
 #### 完整示例代码在`example_5`
 
+## 第八章 [双向流示例](http://blog.csdn.net/donkor_/article/details/140050777)
+#### 完整示例代码在`example_6`
+
 ---
 
 # About me

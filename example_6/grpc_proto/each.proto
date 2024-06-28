@@ -1,0 +1,25 @@
+// 指定proto版本
+syntax = "proto3";
+// 指定默认包名
+package each_proto;
+// 指定golang包名
+option go_package = "/each_proto";
+
+//定义个流服务，叫什么名字无所谓
+service EachStream {
+  //关键字stream
+  rpc Chat(stream Request)returns(stream Response){}
+}
+//请求参数
+message Request{
+  string content = 1;
+}
+
+//回调参数
+message Response{
+  string message =1;
+}
+
+//protoc --go_out=. --go-grpc_out=. ./each.proto
+
+
