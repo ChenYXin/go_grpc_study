@@ -15,8 +15,11 @@
 ## 第五章 [多proto文件示例](http://blog.csdn.net/donkor_/article/details/140006474)
 #### 完整示例代码在`example_3`
 
-## 第五章 [服务器流式传输](http://blog.csdn.net/donkor_/article/details/140009483)
+## 第六章 [服务器流式传输](http://blog.csdn.net/donkor_/article/details/140009483)
 #### 完整示例代码在`example_4`
+
+## 第七章 [客户端流式传输](http://blog.csdn.net/donkor_/article/details/140044581)
+#### 完整示例代码在`example_5`
 
 ---
 
